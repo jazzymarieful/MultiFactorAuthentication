@@ -2,8 +2,8 @@ package sr.unasat.algorithms.and.datastructures;
 
 public class PossessionPassword implements PasswordStructure{
 
-    String password;
-    int priorityLvl;
+    private String password;
+    private int priorityLvl;
 
     public PossessionPassword(String password, int priorityLvl) {
         this.password = password;
@@ -13,7 +13,6 @@ public class PossessionPassword implements PasswordStructure{
     public String getPassword() {
         return password;
     }
-
     public int getPriorityLvl() {
         return priorityLvl;
     }

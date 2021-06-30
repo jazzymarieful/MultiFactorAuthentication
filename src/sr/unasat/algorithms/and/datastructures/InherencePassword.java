@@ -2,8 +2,8 @@ package sr.unasat.algorithms.and.datastructures;
 
 public class InherencePassword implements PasswordStructure {
 
-    String password;
-    int priorityLvl;
+    private String password;
+    private int priorityLvl;
 
     public InherencePassword(String password, int priorityLvl) {
         this.password = password;
@@ -13,12 +13,9 @@ public class InherencePassword implements PasswordStructure {
     public String getPassword() {
         return password;
     }
-
     public int getPriorityLvl() {
         return priorityLvl;
     }
-
-    public void createKnowledgePassword() {}
 
     @Override
     public boolean compare(String password) {

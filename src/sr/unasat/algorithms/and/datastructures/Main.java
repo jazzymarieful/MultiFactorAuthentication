@@ -12,9 +12,17 @@ public class Main {
 
         passwordVerifier.createMultiFactorAuth(kpw, ppw, ipw);
 
-        passwordVerifier.viewQueue();
+//        passwordVerifier.viewQueue();
 
-        String[] multiFactorPasswords = {"1", "2", "3"};
+        String[] multiFactorPasswords = {"94hrfg57", "457nxx54", "4hr785fg"};
+        String[] multiFactorPasswordsBad = {"94hrfg57", "0000", "4hr785fg"};
+        
+
+        String result = passwordVerifier.verifyMultiFactorAuth(multiFactorPasswordsBad);
+
+        System.out.println(result);
+
+        //queue ipw(455989), ppw(84857), kpw(344848)
 
 
 

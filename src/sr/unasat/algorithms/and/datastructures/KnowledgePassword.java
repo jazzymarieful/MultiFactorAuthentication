@@ -2,8 +2,8 @@ package sr.unasat.algorithms.and.datastructures;
 
 public class KnowledgePassword implements PasswordStructure{
 
-    String password;
-    int priorityLvl;
+    private String password;
+    private int priorityLvl;
 
     public KnowledgePassword(String password, int priorityLvl) {
         this.password = password;
@@ -13,7 +13,6 @@ public class KnowledgePassword implements PasswordStructure{
     public String getPassword() {
         return password;
     }
-
     public int getPriorityLvl() {
         return priorityLvl;
     }

@@ -18,6 +18,10 @@ public class CircularQueue {
         nItems = 0;
     }
 
+    public PasswordStructure[] getQueArray() {
+        return queArray;
+    }
+
     public void insert(PasswordStructure value) {
         if(rear == maxSize - 1) {
             rear = -1;
@@ -41,7 +45,7 @@ public class CircularQueue {
     }
 
     public PasswordStructure peekFront() {
-        System.out.println(queArray[front]);
+//        System.out.println(queArray[front]);
         return queArray[front];
     }
 
